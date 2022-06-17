@@ -5,8 +5,8 @@ public class Operacoes_matematicas {
 	public static void main(String[] args) {
 		
 		String operacao;
-		int numum;
-		int numdois;
+		int numum, numdois, soma, subtracao, multiplicacao;
+		
 		
 		Scanner ler = new Scanner(System.in);
 		
@@ -17,9 +17,13 @@ public class Operacoes_matematicas {
 		System.out.print("Entre com o segundo número:\n");
 		numdois = ler.nextInt();
 		
+		soma = (numum + numdois); 
+		subtracao = (numum - numdois);
+		multiplicacao = (numum * numdois);
 		
-		
-		
+		if(operacao == "+") {
+		    System.out.print("O resultado da operação é:" + soma);
+		}
 	}
 
 }
